@@ -1,0 +1,47 @@
+body{
+  background-color: black;
+
+}
+
+.interface{
+  background-color: white;
+  width:600px;
+  height: 900px;;
+}
+
+.text1{
+  font-size: 24px;
+  align-self: center;
+}
+
+audio{
+  align-self: center;
+}
+
+.thick {
+  width:450px
+  align-self:center;
+  line-height: 2px;
+}
+
+.artist-search{
+  display: flex;
+  flex-direction: row;
+}
+
+.artist-name {
+font-size: 18px;
+}
+
+.submit-button{
+  color:#444444;
+  width: 100px;
+  border:1px solid black;
+  border-radius: 5px;
+}
+
+.thin{
+  width:450px;
+  align-self: center;
+  line-height: 0.5px;
+}
