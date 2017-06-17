@@ -30,23 +30,28 @@ document.addEventListener('click', function(e){
   fetch("https://api.soundcloud.com/tracks/?client_id=095fe1dcd09eb3d0e1d3d89c76f5618f&" + artist.innerHTML)
   .then(function(response){
   response.json().then(function(data){
-    console.log(data);
+    // console.log(data);
 
-    // let artistInfo = data;
+    let artistInfo = data.results;
 
-// // Get the track image and name of track
-//     let li = createNode('li');
-//     let img = createNode('img');
-//     let name = createNode('span');
-//
-//     img.src = data.artwork_url;
-//     span.innerHTML = "";
-//
-// // Append the info to the unordered list with classname tracks
-//     append(li, img);
-//     append(li, span);
-//     append(ul, li);
+for (var i = 0; i < data.length; i++ ){
+  // Get the track image and name of track
+      let li = createNode('li');
+      console.log(li);
+      let img = createNode('img');
+      console.log(img);
+      // let name = createNode('span');
 
+ img.src = data[i].artwork_url;
+ console.log(img.src);
+
+    // span.innerHTML = artist.innerHTML;
+
+// Append the info to the unordered list with classname tracks
+    append(li, img);
+    // append(li, span);
+    // append(ul, li);
+}
 
   })
 })

@@ -46,7 +46,9 @@ font-size: 18px;
   line-height: 0.5px;
 }
 
-.soundcloud-image{
+.tracks{
+  display:flex;
+  flex-flow: wrap;
   width:100px;
   height:100px;
 }
