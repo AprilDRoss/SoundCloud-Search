@@ -33,9 +33,9 @@ audio{
 font-size: 18px;
 }
 
-.submit-button{
+.submitbutton{
   color:#444444;
-  width: 100px;
+  width: 200px;
   border:1px solid black;
   border-radius: 5px;
 }
@@ -44,4 +44,9 @@ font-size: 18px;
   width:450px;
   align-self: center;
   line-height: 0.5px;
+}
+
+.soundcloud-image{
+  width:100px;
+  height:100px;
 }
